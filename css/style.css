@@ -1,0 +1,526 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: #fff;
+}
+body{
+    background-color: #1a1a1a;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: #101a1f;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius:5px;
+}
+div.logbu{
+    font-size: 20px;
+    background-color: #095554;
+    height: 20px;
+    width: 90px;
+    margin: 10px 45px;
+    border: 2px solid #2cff02;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+button.adryan{
+    background-color: #0f2027;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #f0d432;
+}
+button.adryan a{
+    font-size: larger;
+}
+div.logbu a{
+ text-decoration: none;
+ color: #f0d432;
+}
+header figure{
+    height: 90px;
+    width: 130px;
+}
+header figure img{
+    max-width: 100%;
+    max-height: 100%;
+}
+header h5{
+    margin-left: 80px;
+    font-size: 19px;
+}
+nav{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    
+}
+nav ul{
+    height: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #0b2836;
+    border: #2cff02 solid 1px;
+    border-radius:10px;
+}
+nav ul a{
+    text-decoration: none;
+    color: #788c94;
+
+}
+nav ul a:hover{
+    background-color: #0f2027;
+    border-radius: 5px;
+    color: #69d0f9;
+}
+main{
+    min-height: 450px;
+    width: 90%;
+    margin: auto;
+    
+}
+main.compra{
+    margin: 20px auto;
+}
+main.compra div{
+    margin: 30px auto;
+}
+figure.procu{
+    height: 350px;
+    width: 300px;
+}
+
+img#produto{
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+div.Sname{
+    display: flex;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+section#fotos div{
+    margin: 20px auto;
+}
+main.caca{
+    height: 90%;
+    margin: 0px;
+    width: 100%;
+    
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+section#fotos div{
+    margin: 20px auto;
+}
+section#fotos figure{
+    height: 270px;
+    width: 370px;
+    border-radius: 20px;
+    margin: 25px;
+}
+section#fotos figure img:hover{
+    transition: transform 2s;
+    transform: translateX(10px) scale(1.5);
+}
+section#fotos figure img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+    border: #f0d432 solid 1px;
+}
+
+.skins{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.lol{
+    display: none;
+}
+button
+  footer{
+    background-color: #101a1f;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius:5px;
+    margin: auto;
+    padding: auto;
+  }
+  footer h2{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  footer figure{
+    height: 90px;
+    width: 130px;
+}
+footer figure img{
+    max-width: 100%;
+    max-height: 100%;
+}
+section.loo{
+    display: flex;
+    margin: auto;
+}
+
+div.xaro{
+    width: 100%;
+}
+div.xaro img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+article.produto fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    border: none;
+    background-color: rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+article.produto fieldset legend{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+article.produto fieldset legend h1{
+    color: #9a8820;
+    font-size: 30px;
+}
+article.produto fieldset figure img:hover{
+    transform: scale(1.3)!important;
+}
+article.produto fieldset figure a{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+figure
+article.produto fieldset figure a button{
+    background-color: #20333c;
+    border: none;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+}
+/*loguin*/
+aside{
+    background-color: #20333c;
+    height: 100vh;
+    width: 30%;
+    margin: 0px;
+    
+}
+div.icon{
+    margin: 30px 25px;
+}
+div.icon figure{
+    height: 50px;
+    width: 200px;
+}
+div.icon figure img{
+    max-width: 100%;
+    max-height: 100%;
+}
+div.formu form{
+    display: flex;
+    flex-direction: column;
+    
+}
+div.formu form input{
+    background-color: #20333c;
+    border: none;
+    transform: scale(0.7);
+    margin: 10px 0px;
+}
+div.formu form input:focus{
+    transform: scale(0.9);
+    
+    
+}
+div.reso{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.reso figure{
+    height: 25px;
+    width: 50px;
+    
+}
+div.reso figure img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    width: 50px;
+    background-color: rgba(1, 1, 1, 0.1);
+
+}
+div.reso figure img:hover{
+    
+    background-color: rgba(1, 1, 1, 0.2);
+}
+body.logar{
+    display: flex;
+}
+main.caca{
+    background-color: #101a1f   ;
+    height: 100vh;
+    background-image: url(../images/Corporate_Mundo_optimized.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+div.caixa{
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+div.caixa button{
+    height: 35px;
+    width: 120px;
+    border-radius: 15px;
+    background-color: rgba(red, rgb(37, 59, 37), blue, 0.5);
+    background-color: #1a2a31;
+    border: none;
+
+}
+div.caixa button:hover{
+    background-color: #243a43;
+}
+div.caixa div{
+    margin: 10px 0px;
+}
+div.caixa input{
+    height: 10px;
+    width: 10px;
+    color: black;
+}
+div.conta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+div.conta a{
+    text-decoration: none;
+    color: #23495b;
+}
+div.conta a:hover{
+    color: #2e5f75;
+}
+h2.skiiinno{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    animation: luiz 10s infinite;
+}
+h2.porcelana{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    animation: porcelana 10s infinite;
+}
+@keyframes porcelana{
+    25%{
+        color: #ABD4E8;
+    }
+    50%{
+        color: #05F2DB;
+    }
+    75%{
+        color: #049DD9;
+    }
+    100%{
+        color: #275DE4;
+    }
+}
+@keyframes luiz{
+    25%{
+        color: #9a8820;
+    }
+    50%{
+        color: #2d6a85;
+    }
+    75%{
+        color: #128b89;
+    }
+    100%{
+        color: rgb(199, 58, 86);
+    }
+}
+div.Sinfo{
+    width: 250px;
+}
+div.infoSki{
+    border-radius: 10px;
+    height: 250px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+div.comprar button{
+    background-color: #2e5f75;
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
+}
+main.cadastro{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/Amumu_SurprisePartySkin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+}
+div#cadastrar{
+    margin: 70px;
+    width: 90%;
+    height: 90%;
+    background-color: #cda506;
+    border: double #ffdd00 1px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+div#cadastrar div{
+    margin: 45px;
+}
+h2.lepo{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', serif;
+}
+label.caca{
+    font-family: 'EB Garamond', serif;
+font-family: 'Playfair Display', serif;
+}
+section#MORRE{
+    width: 20px;
+}
+input.nub{
+    width: 300px;
+    height: 30px;
+    background-color: #cda506;
+    border:solid 1px #6f6f6f;
+    border-top: none;
+    border-right: none;
+}
+input.nub2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 30px;
+    background-color: #cda506;
+    border:solid 1px #6f6f6f;
+    border-top: none;
+    border-right: none;
+    
+}
+
+div#calk{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 90%;
+    width: 32%;
+    background-color: #cda506;
+    border: double #ffdd00 1px;
+}
+div#calk2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: #cda506;
+    border: double #ffdd00 1px;
+}
+.caioboi{
+    width: 160px;
+    height: 50px;
+    background-color: #001f2f;
+    border: 1px solid #cda506;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+}
+.BABYY{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 60px;
+    background-color: #001f2f;
+    border: 1px solid #ffd736;
+}
+.radios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#linha{
+    color: #cda506;
+    height: 1px;
+    width: 100px;
+    background-color: #6f6f6f;
+    border: 1px solid #6f6f6f;
+}
+.radio2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: -100px;
+}
+.radio2 p{
+    margin: 10px;
+}
+.WHAT{
+    width: 99%;
+    height: 50px;
+    background-color: #001f2f;
+    border: #f0d432 1px solid;
+}
+.titulo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.rian{
+    font-size: 20px;
+}

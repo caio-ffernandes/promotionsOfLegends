@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var url = location.search
+        var url_val = url.replace("?","")     
+    </script>
+
+<body>
+    <header>
+        <div>
+            <figure>
+                <img src="images/Nileo.png" alt="Mascote">
+            </figure>
+        </div>
+        <div>
+            <h1>Promotions Of Legends</h1>
+            <h5>Onde quem cria é você</h5>
+        </div>
+        <div class="logbu">
+            <a href="index.html">Voltar</a>
+        </div>
+    </header>
+    <main id="comprar" class="compra">
+        <div>
+        <input list="skiiins" type="search" id="Skname" placeholder="Digite a Skin">
+        <datalist id="skiiins">
+        </datalist>
+        <input type="submit" id="Sbusca" onclick="buscaSkin()">
+    </div>
+        <div id="nomeSkin" class="Sname">
+        <h1>Skin:</h1>
+        <h2 class="skiiinno" >...</h2>
+    </div>
+
+    <section class="Cinfo">
+        <div class="Sinfo">
+            <div>
+                <figure class="procu">
+                <img id="produto" src="images/2639882_password_icon (1).png" alt="">
+                </figure>
+        </div>
+            
+        </div>
+        <div id="valor" class="comprar">
+            <div>
+                <div class="infoSki" id="infoSkin">
+                <h3>Sobre a Skin:</h3>
+                <p></p>
+            </div>
+                <h1 >R$00,00</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script>
+        let preco= document.getElementById("valor")
+        let info = document.getElementById("nomeSkin")
+        let desc = document.getElementById("infoSkin")
+        let imagem = document.getElementById("produto")
+        let nome = " "
+        let descricao = " "
+        valor= ""
+        let skin = document.getElementById("Skname")
+        if (url_val==="draven"){
+            descricao=""
+            valor="R$27,99"
+            nome = "Draven"
+            imagem.src = "images/trabalho/Primetime Draven.jpg"
+            info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            
+        }
+        else if (url_val==="udyr"){
+            descricao=
+            "Os alunos do Dojo Hiragarra sabem que a melhor maneira de informar aos outros que você é bom em esmurrar coisas é ter um punho gigante impresso em Suas roupas. Todo carateca sabe disso, de acordo com 0 sensei Udyr. É por isso que os pais deles compram o uniforme especial do Hiragarra (apenas R$ 449,99)."
+           
+            valor="R$32,99"
+
+
+            nome = "Udyr"
+            imagem.src ="images/trabalho/Black Belt Udyr.jpg"
+            info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="twitch"){
+            descricao=""
+            nome = "Twitch"
+            valor="R$23,99"
+            imagem.src ="images/crime/Crime City Twitch.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="graves"){
+            descricao=""
+            valor="R$17,99"
+            nome = "Graves"
+            imagem.src ="images/crime/Crime City Graves.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="braum"){
+            descricao=""
+            nome = "Braum"
+            valor="R$18,99"
+            imagem.src ="images/crime/Crime City Braum.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="jinx"){
+            descricao=""
+            nome = "Jinx"
+            valor="R$23,99"
+            imagem.src ="images/crime/Crime City Jinx.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="ezreal"){
+            descricao=""
+            nome = "Ezreal"
+            valor="R$28,99"
+            imagem.src ="images/porcelana/Porcelain Protector Ezreal.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="porcelana">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="kindred"){
+            descricao=""
+            nome = "Kindred"
+            valor="R$33,99"
+            imagem.src ="images/porcelana/Porcelain Kindred.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="porcelana">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="amumu"){
+            descricao=""
+            nome = "Amumu"
+            valor="R$15,99"
+            imagem.src ="images/porcelana/Porcelain Amumu.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="porcelana">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="lissandra"){
+            descricao=""
+            nome = "Lissandra"
+            valor="R$16,99"
+            imagem.src ="images/porcelana/Porcelain Lissandra.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="porcelana">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="lulu"){
+            descricao=""
+            nome = "lulu"
+            valor="R$24,99"
+            imagem.src ="images/cosmico/Cosmic Enchantress Lulu.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="lux"){
+            descricao=""
+            nome = "Lux"
+            valor="R$13,99"
+            imagem.src ="images/cosmico/Cosmic Lux.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="irelia"){
+            descricao=""
+            nome = "Irelia"
+            valor="R$19,99"
+            imagem.src ="images/trabalho/Aviator Irelia.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="mundo"){
+            descricao=""
+            nome = "Mundo"
+            valor="R$36,99"
+            imagem.src ="images/trabalho/Corporate Mundo.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="xinzhao"){
+            descricao=""
+            nome = "Xin Zhao"
+            valor="R$14,99"
+            imagem.src ="images/cosmico/Cosmic Defender Xin Zhao.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+        else if (url_val==="masteryi"){
+            descricao=""
+            nome = "Master Yi"
+            valor="R$19,99"
+            imagem.src ="images/cosmico/Cosmic Blade Master Yi.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+
+
+        
+        function buscaSkin(){
+ 
+        switch(skin.value){
+            case "Jinx Cidade do crime":
+            nome = "Jinx Cidade do crime"
+            valor="R$23,99"
+            imagem.src = "images/crime/Crime City Jinx.jpg"
+            info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Master Yi":
+            nome = "Master Yi"
+            valor="R$19,99"
+            imagem.src ="images/cosmico/Cosmic Blade Master Yi.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Xin Zhao":
+            nome = "Xin Zhao"
+            valor="R$14,99"
+            imagem.src ="images/cosmico/Cosmic Defender Xin Zhao.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Mundo":
+            nome = "Mundo"
+            valor="R$36,99"
+            imagem.src ="images/trabalho/Corporate Mundo.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Irelia":
+            nome = "Irelia"
+            valor="R$19,99"
+            imagem.src ="images/trabalho/Aviator Irelia.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Lux":
+            nome = "Lux"
+            valor="R$13,99"
+            imagem.src ="images/cosmico/Cosmic Lux.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Ezreal":
+            nome = "Ezreal"
+            valor="R$28,99"
+            imagem.src ="images/porcelana/Porcelain Protector Ezreal.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Lulu":
+            nome = "lulu"
+            valor="R$24,99"
+            imagem.src ="images/cosmico/Cosmic Enchantress Lulu.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Lissandra":
+            nome = "Lissandra"
+            valor="R$16,99"
+            imagem.src ="images/porcelana/Porcelain Lissandra.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Amumu":
+            nome = "Amumu"
+            valor="R$15,99"
+            imagem.src ="images/porcelana/Porcelain Amumu.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+            
+            
+            case "Kindred":
+            nome = "Kindred"
+            valor="R$33,99"
+            imagem.src ="images/porcelana/Porcelain Kindred.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Braum":
+            nome = "Braum"
+            valor="R$18,99"
+            imagem.src ="images/crime/Crime City Braum.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Graves":
+            nome = "Graves"
+            valor="R$17,99"
+            imagem.src ="images/crime/Crime City Graves.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Twitch":
+            nome = "Twitch"
+            valor="R$23,99"
+            imagem.src ="images/crime/Crime City Twitch.jpg"
+        info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Udyr":
+            nome = "Udyr"
+            valor="R$32,99"
+            imagem.src ="images/trabalho/Black Belt Udyr.jpg"
+            info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+
+
+            case "Draven":
+            descricao=""
+            valor="R$27,99"
+            nome = "Draven"
+            imagem.src = "images/trabalho/Primetime Draven.jpg"
+
+            info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+            break;
+            default:
+                nome="Não disponivel"
+                imagem.src = "images/default.png"
+                info.innerHTML=`
+            <h1>Skin:</h1>
+            <h2 class="skiiinno">${nome}</h2>
+            `
+            desc.innerHTML=`
+            <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+            `
+            preco.innerHTML=`
+            <div>
+                <h3>Sobre a Skin:</h3>
+                <p>${descricao}</p>
+                <h1>${valor}</h1>
+            </div>
+            <div>
+                <a href=""><button>Comprar</button></a>
+            </div>`
+        }
+    }
+    </script>
+</body>
+</html>

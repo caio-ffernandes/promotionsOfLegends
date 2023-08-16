@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="cadastro">
+    <div id="calk">
+        <div id="calk2">
+        <div id="cadastrar">
+            <div class="nome">
+                <br><br><br>
+                <h2 class="lepo">Promotions Of Legends</h2>
+                <img src="" alt="">
+            </div>
+            <div>
+                <form action="">
+                    <section id="MORRE">
+                <label for="emailtxt" class="caca">Email</label>
+                    </section>
+                <input type="email" class="nub" name="emaitxt" id="emailtxt" required>
+            </form>
+            
+            <div class="BABYY">
+                <button class="caioboi" onclick="cadastrar()">COMEÇAR</button>
+            </div>
+            <div class="radios">
+                <input type="radio" checked name="btNext" id="btNext1">
+                <div id="linha"></div>
+                <input type="radio"  name="btNext" id="btNext2" disabled>
+                <div id="linha"></div>
+                <input type="radio" name="btNext" id="btNext3" disabled>
+            </div>
+            <div class="radio2">
+                <p>1°passo</p>
+                <p>2°passo</p>
+                <p>3°passo</p>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+        </div>
+    </main>
+    <script>
+        let escrita=document.getElementById("cadastrar")
+        let email=document.getElementById("emailtxt")
+        
+        let pass=''
+        let word=''
+        let mail=''
+        let neunome=''
+        let num = 0
+        function cadastrar(){
+            
+            
+            if (num==0){
+                mail=email.value
+                console.log(mail)
+                num++
+            }
+            else if (num==1){
+                escrita.innerHTML=`
+                <div class="titulo2">
+                <h2 class="lepo">Quando você nasceu</h2>
+                </div>
+               
+            <input type="date" class="WHAT" placeholder="DIA/MES/ANO" name="" id="">
+        
+            </div>
+            <div class="BABYY">
+                <button class="caioboi" onclick="cadastrar()">AVANÇAR</button>
+            </div>
+            <div class="radios">
+                <input type="radio" name="" id="" disabled>
+                
+                <input type="radio" checked name="" id="">
+                
+                <input type="radio" name="" id="" disabled>
+                
+            </div>
+            <div class="radio2">
+                <p>1°passo</p>
+                <p>2°passo</p>
+                <p>3°passo</p>
+            </div>
+                `
+                num++
+            }
+            else if (num==2){
+                escrita.innerHTML=`
+                <h2 class="lepo">Por fim, crie um nome de usuário e senha</h2>
+                <div class = "rian">
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" class="nub2" name="nomext" id="nometxt">
+                <label for="senhatxt">Senha</label>
+                <input type="password" class="nub2" name="senhatxt" id="senhatxt">
+                <label for="conftxt">Confirmar Senha</label>
+                <input type="password" class="nub2" name="conftxt" id="conftxt">
+            </form>
+            </div>
+            <div class="BABYY">
+                <button class="caioboi" onclick="cadastrar()"><a href="login.html">AVANÇAR</a></button>
+            </div>
+            <div class="radios">
+            <input type="radio" name="" id="" disabled>
+                
+                <input type="radio"  name="" id="" disabled>
+               
+                <input type="radio" checked name="" id="">
+                </div>
+                <div class="radio2">
+                <p>1°passo</p>
+                <p>2°passo</p>
+                <p>3°passo</p>
+            </div>
+                `
+                let confir=document.getElementById("conftxt")
+        let senha= document.getElementById("senhatxt")
+        let nome= document.getElementById("nometxt")
+                
+                console.log(nome.value)
+                console.log(senha.value)
+                console.log(confir.value)
+            }
+        }
+    </script>
+</body>
+</html>
